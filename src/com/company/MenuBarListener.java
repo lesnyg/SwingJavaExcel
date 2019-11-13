@@ -37,14 +37,14 @@ public class MenuBarListener implements ActionListener {
                 for(int i = 0; i < list.size(); i++){
                     int sizeMap = list.get(i).size();
                     for(int j = 0; j < sizeMap ; j++){
-                        stage.data[i][j+1] = list.get(i).get("attr"+j);
+                        stage.data[i][j] = list.get(i).get("attr"+j);
                     }
                 }
                 stage.repaint();
             }
         }else if(e.getSource() == stage.mNew){
             for(int i = 0; i < 50; i++){
-                for(int k = 1; k < 6; k++){
+                for(int k = 0; k < 6; k++){
                     stage.data[i][k] = "";
                 }
             }

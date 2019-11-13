@@ -17,7 +17,7 @@ public class SpreadStage extends JFrame {
     public MenuItem mOpen;
     public MenuItem mExit;
 
-    String[] colNames = {"","A","B","C"};
+    String[] colNames = {"A","B","C"};
     public Object data[][];
 
     public SpreadStage(String title) {
@@ -57,9 +57,9 @@ public class SpreadStage extends JFrame {
 
         data = new Object[50][6];
 // row번호설정
-        for(int i = 0; i < 50; i++){
-            data[i][0] = i + 1;
-        }
+//        for(int i = 0; i < 50; i++){
+//            data[i][0] = i + 1;
+//        }
         table = new JTable(data,colNames);
         table.setRowHeight(20);
         JScrollPane scrollPane = new JScrollPane(table);

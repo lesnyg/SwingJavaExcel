@@ -38,7 +38,7 @@ import org.apache.poi.ss.usermodel.FormulaEvaluator;
          */
         public List<HashMap<String, String>> getListExcel(File file) throws Exception {
             List<HashMap<String, String>> list = new ArrayList<HashMap<String,String>>();
-            HSSFWorkbook workbook = new HSSFWorkbook(new FileInputStream("c:\\test.xls"));
+            HSSFWorkbook workbook = new HSSFWorkbook(new FileInputStream(file));
 //엑셀파일의 시트 존재 유무 확인
             if (workbook.getNumberOfSheets() < 1) return null;
 
